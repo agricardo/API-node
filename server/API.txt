@@ -1,0 +1,52 @@
+//Lions data
+
+//A Lion
+{
+    'id': id,
+    'name': name,
+    'pride' : pride,
+    'age' : age,
+    'gender' : gender
+}
+
+
+{
+    'id': 1,
+    'name': Simba,
+    'pride' : The cool cats,
+    'age' : 3,
+    'gender' : 'male'
+}
+
+//Spec
+{
+    'GET /Lion' : {
+        'desc': 'return all lions',
+        'response' : '200 application/json',
+        'data' : [{},{},{}]
+    },
+    
+    'GET/Lion' : {
+        'desc': 'return one lion represented by id',
+        'response' : '200 application/json',
+        'data' : {}
+    }
+
+    POST /'Lions' : {
+        'desc': 'create and return a new lion using the posted object as a lion'
+        'response' : '200 application/json',
+        'data' : {}
+    },
+
+    'PUT /lions/:id' : {
+        'desc': 'updates and returns the matching lion with the posted update',
+        'response' : '200 application/json',
+        'data' : {}
+    }
+
+    'DELETE /lions/:id' : {
+        'desc': 'delete and return the matching lion',
+        'response' : '200 application/jsopn',
+        'data': {}
+    }
+}
